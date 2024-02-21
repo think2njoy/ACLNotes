@@ -22,6 +22,8 @@ https://www.usenix.org/legacy/events/usenix03/tech/freenix03/full_papers/gruenba
 
 ## Explanation of ACL Commands
 
+* Data path/directory and user ID descriptions are generic/anonymous. Hence, they need to be properly specified for a given context.  
+
 1. To revoke all access...
 
 ```bash
