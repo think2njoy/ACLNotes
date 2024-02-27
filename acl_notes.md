@@ -1,28 +1,35 @@
 
+
 # POSIX ACL NOTES
 
 
-## Comment & Disclaimer
+## Opening comments
 
-These notes were prepared based on my experimenting with the POSIX ACL commands on the KAUST Ibex (linux cluster) HPC environment. 
+Access control lists (ACLs) offer a means to control access to data. These notes were prepared based on my experimenting with the 
+POSIX ACL commands on the KAUST Ibex (linux cluster) HPC environment. 
+
+Data path/directory and user ID descriptions are generic/anonymous. Hence, they need to be properly specified for a given context.  
+
+Here I have used setfacl commands for various requirement settings for handling ACLs. However, I have used getfacl command in 
+combination with grep to primarily check existence/absence of a userid information in the concerned ACL for the 
+file/directory. 
+
 For a good reference on this topic, I would suggest the following literature, mentioned below. 
 
 
-## Version Info
+## Reference
+
+POSIX Access Control Lists on Linux
+https://www.usenix.org/legacy/events/usenix03/tech/freenix03/full_papers/gruenbacher/gruenbacher_html/main.html
+
+
+## Software version information
 
 setfacl 2.3.1
 getfacl 2.3.1
 
 
-## Reference
-
-1. POSIX Access Control Lists on Linux
-https://www.usenix.org/legacy/events/usenix03/tech/freenix03/full_papers/gruenbacher/gruenbacher_html/main.html
-
-
 ## Explanation of ACL Commands
-
-* Data path/directory and user ID descriptions are generic/anonymous. Hence, they need to be properly specified for a given context.  
 
 1. To revoke all access...
 
